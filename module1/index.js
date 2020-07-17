@@ -99,18 +99,18 @@ switch (country) {
 let input;
 input = prompt("Введите число");
 let totalNumb = 0;
-// if (isNaN(input) == fasle) {
-//     totalNumb = totalNumb + input
-// } else if (input == null) {
-//     console.log(`Общая сумма чисел равна ${totalNumb}`);
 
-// } else {
-
-// }
 do {
     input = prompt("Введите число");
-    let num = Number(input);
-    totalNumb = totalNumb + num;
+    let num;
+    if (isNaN(input) == true) {
+        input = prompt("Ошибка ввода, попробуйте еще");
+    } else {
+        num = Number(input);
+        totalNumb = totalNumb + num;
+    }
+
+
 }
 while (input !== null)
 console.log(`Общая сумма чисел равна ${totalNumb}`);
