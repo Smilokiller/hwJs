@@ -86,11 +86,11 @@
 // console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
 
 
-// 4 task
+// // 4 task
 
 // class StringBuilder {
 //     constructor(value) {
-//         this.value = value;
+//         this._value = value;
 //     }
 //     get value() {
 //         return this._value;
@@ -147,7 +147,7 @@
 //          */
 //     constructor(obj) {
 //         this.speed = 0;
-//         this.price = obj.price;
+//         this._price = obj.price;
 //         this.maxSpeed = obj.maxSpeed;
 //         this.isOn = false;
 //         this.distance = 0;
@@ -191,7 +191,6 @@
 //     accelerate(value) {
 
 //         if (this.speed + value < this.maxSpeed) {
-
 //             return this.speed += value;
 //         } else { return "wrong speed" }
 //     }
