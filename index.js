@@ -228,3 +228,89 @@
 //     }
 // }
 // fizzBuzz(25);
+
+// let sells = [];
+// let statistic = {
+//     tshirt: 0,
+//     jacket: 0,
+//     socks: 0,
+// }
+
+// const SellSmth = function(color, size, type) {
+//     this.color = color;
+//     this.size = size;
+//     this.type = type;
+// }
+
+// const addStatistic = function(statistic, clother) {
+//     for (const key in statistic) {
+//         if (statistic.hasOwnProperty(key)) {
+//             let element = statistic[key];
+//             for (const item of clother) {
+//                 if (item.type === "tshirt") {
+//                     statistic.tshirt += 1;
+//                 } else if (item.type === "jacket") {
+//                     statistic.jacket += 1;
+//                 } else if (item.type === "socks") {
+//                     statistic.socks += 1;
+//                 }
+//             }
+//             return (statistic);
+//         }
+//     }
+// }
+
+// const sellsList = function(sells) {
+//     for (const item of sells) {
+//         console.log(item)
+//     }
+// }
+
+// const tshirtRed = new SellSmth('red', 's', 'tshirt');
+// const tshirtBlue = new SellSmth('blue', 'xl', 'tshirt');
+// const tshirtWhite = new SellSmth('white', 'xs', 'tshirt');
+// const jackettRed = new SellSmth('red', 's', 'jacket');
+// const jackettBlack = new SellSmth('black', 'l', 'jacket');
+// const sockstWhite = new SellSmth('White', 'xxl', 'socks');
+
+// sells.push(tshirtRed);
+// sells.push(tshirtBlue);
+// sells.push(tshirtWhite);
+// sells.push(jackettRed);
+// sells.push(jackettBlack);
+// sells.push(sockstWhite);
+// sellsList(sells);
+// console.log(addStatistic(statistic, sells))
+
+
+// const arr = ["a", "b", "c"];
+// const arr2 = [1, 2, 3];
+
+// const oneArr = [...arr, ...arr2];
+// console.log(oneArr);
+
+
+// arr.push(1, 2, 3);
+// console.log(arr);
+
+// arr2.reverse();
+// console.log(arr2);
+
+// const arr3 = [1, 2, 3, 4, 5];
+// const arrSlice = arr3.slice(0, 3);
+// console.log(arr3)
+// console.log(arrSlice);
+
+// const a = [1, 2, 3, 4, 5];
+// a.splice(1, 2);
+// console.log(a);
+
+
+// const a = [1, 2, 3, 4, 5];
+// console.log(Math.floor(Math.random() *(a.length + 1)));
+
+// const str = prompt("Enter str");
+// let arr = str.split('');
+// console.log(arr);
+// console.log(arr.reverse());
+// console.log(arr.join(''));
