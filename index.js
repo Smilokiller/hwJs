@@ -314,3 +314,183 @@
 // console.log(arr);
 // console.log(arr.reverse());
 // console.log(arr.join(''));
+
+// let creaturesArr = [];
+// class Creature {
+//     constructor(type, planet, status, sex) {
+//         this.type = type;
+//         this.planet = planet;
+//         this.status = status;
+//         this.sex = sex;
+//     }
+//     get show() {
+//         return (`This ${this.type} is from ${this.planet} and has ${this.status} status`)
+//     }
+//     set changePlanet(str) {
+//         this.planet = str;
+//         return this.planet
+//     }
+//     static intro() {
+//         console.log("There is a billions types of creatures all around the world!")
+//     }
+//     static checkCreatures() {
+//         console.log(creaturesArr)
+//     }
+// }
+// class Human extends Creature {
+//     constructor(name, type, planet, status, sex, nationality) {
+//         super(type, planet, status, sex);
+//         this.name = name;
+//         this.nationality = nationality;
+//     }
+//     addToCreaturesList() {
+//         creaturesArr.push({ name: this.name, planet: this.planet, nationlity: this.nationality })
+//     }
+// }
+
+
+// class Orc extends Creature {
+//     constructor(name, type, planet, status, sex, color, weight) {
+//         super(type, planet, status, sex);
+//         this.name = name;
+//         this.color = color;
+//         this.weight = weight;
+
+//     }
+//     addToCreaturesList() {
+//         creaturesArr.push(this)
+//     }
+// }
+
+// let Adam = new Human('Adam', 'human', 'Mars', 'three-dimensional', 'male', 'Ukrainian');
+// Adam.addToCreaturesList();
+// let Eva = new Human('Eva', 'human', 'Venus', 'three-dimensional', 'female', 'Ukrainian');
+// Eva.addToCreaturesList();
+
+// let Thrall = new Orc('Thrall', 'orc', 'Draenor', 'three-dimensional', 'male', 'green', '120kg');
+// Thrall.addToCreaturesList()
+// Creature.checkCreatures();
+
+
+
+// ________________________TASK#1
+// Реализуйте класс Student (Студент), который будет наследовать от класса User.
+// Этот класс должен иметь следующие свойства:
+//  name (имя, наследуется от User), surname (фамилия, наследуется от User),
+//  year (год поступления в вуз).
+//  Класс должен иметь метод getFullName() (наследуется от User),
+// с помощью которого можно вывести одновременно имя и фамилию студента. 
+// Также класс должен иметь метод getCourse(), который будет выводить текущий курс студента (от 1 до 5). 
+// Курс вычисляется так: нужно от текущего года отнять год поступления в вуз. Текущий год получите самостоятельно.
+// // Вот так должен выглядеть класс User, от которого наследуется наш Student:
+// class User {
+
+//     constructor(name, surname) {
+//         this._name = name;
+//         this._surname = surname;
+//     }
+
+//     get name() {
+//         return this._name;
+//     }
+
+//     get surname() {
+//         return this._surname;
+//     }
+
+//     set name(value) {
+//         this._name = value;
+//     }
+
+//     getFullName() {
+//         return this.name + " " + this.surname;
+//     }
+//     getCourse() {
+//         const nowYear = 2020;
+//         console.log("cтудент на" + (nowYear - this.year) + "курсе");
+//     }
+// }
+
+// class Student extends User {
+//     constructor(name, surname, year) {
+//         super(name, surname);
+//         this._year = year;
+//     }
+//     get year() {
+//         return this._year;
+//     }
+
+// }
+// // Вот так должен работать наш класс:
+// let student = new Student('Иван', 'Иванов', 2017);
+// console.log(student.name); //выведет 'Иван'
+// console.log(student.surname); //выведет 'Иванов'
+// console.log(student.getFullName()); //выведет 'Иван Иванов'
+// console.log(student.year); //выведет 2017console.log(worker.getCourse()); //выведет 3 - третий курс, так как текущий год 2020
+// student.getCourse();
+// // ----------------------------------------------------------------
+// const numbers = [1, 2, 3, 4, 5];
+// const multNubmers = numbers.map(numb => numb * 2);
+// console.log(multNubmers);
+
+// const arr = ["Есть", "жизнь", "на", "Марсе"];
+// const arrlength = arr.map(arr => arr.length);
+// console.log(arrlength);
+
+// const tweets = [
+//     { id: "000", likes: 5, tags: ['js', "nodejs"] },
+//     { id: "001", likes: 2, tags: ["html", "css"] },
+//     { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//     { id: "003", likes: 8, tags: ["css", "react"] },
+//     { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const allLikes = tweets.reduce((acc, tweet) => acc + tweet.likes, 0);
+// console.log(allLikes);
+
+
+
+// const findTweet = tweets.filter(tweet => tweet.tags.includes("js"));
+// console.log(findTweet);
+// -------------------------------------------------------------------
+
+
+
+// const numbers = [1, 2, 3, 4, 5, 11];
+// const find = numbers.filter(value => value % 2);
+// const sum = find.reduce((acc, value) => acc + value, 0);
+// console.log(find);
+// console.log(sum);
+
+
+// let items = [
+//     { name: "Миша", age: 23 },
+//     { name: "Вася", age: 44 },
+//     { name: "Саша", age: 2 },
+//     { name: "Рома", age: 99 },
+//     { name: "Ашот", age: 19 }
+// ];
+
+// const itemsSort = items.sort((a, b) => a.age > b.age ? 1 : -1);
+// console.log(itemsSort);
+
+
+// let x = [1, 2, 3, "a", "b", "c"];
+// console.log(x);
+// const changeX = x.fill(0);
+// console.log(changeX);
+
+// const arr = [10, 20, 30, 40];
+// const findArr = arr.some(el => el > 30);
+// console.log(findArr);
+
+// let items = [
+//     { name: "Миша", age: 23, isTheKingOfNeighbourhood: false },
+//     { name: "Вася", age: 44, isTheKingOfNeighbourhood: false },
+//     { name: "Саша", age: 2, isTheKingOfNeighbourhood: false },
+//     { name: "Рома", age: 99, isTheKingOfNeighbourhood: false },
+//     { name: "Ашот", age: 19, isTheKingOfNeighbourhood: true }
+// ];
+
+// const findKing = items.find(el => el.isTheKingOfNeighbourhood === true);
+// console.log(findKing);
