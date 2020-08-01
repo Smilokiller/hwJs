@@ -55,7 +55,6 @@ import users from './users.js';
 // // 7 task
 
 // const calculateTotalBalance = users => {
-//     let acc = 0;
 //     return users.reduce((acc, user) => acc += user.balance, 0)
 // };
 
@@ -64,7 +63,8 @@ import users from './users.js';
 // // 8 task
 
 // const getUsersWithFriend = (users, friendName) => {
-//     return users.filter(user => user.friends.includes(friendName))
+//     const filter = users.filter(user => user.friends.includes(friendName))
+//     return filter.map((user) => user.name);
 // };
 
 // console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
@@ -74,7 +74,7 @@ import users from './users.js';
 // //  9 task
 
 // const getNamesSortedByFriendsCount = users => {
-//     users.sort((a, b) => a.friends.length > b.friends.length ? 1 : -1)
+//     users.sort((a, b) => a.friends.length - b.friends.length)
 //     return users.map(user => user.name)
 // };
 

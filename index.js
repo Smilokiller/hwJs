@@ -1,3 +1,5 @@
+import pikachu from './pokemon.js';
+import pokemon from './pokemon.js';
 // // first minitask
 
 // const myNumb = 15;
@@ -494,3 +496,42 @@
 
 // const findKing = items.find(el => el.isTheKingOfNeighbourhood === true);
 // console.log(findKing);
+
+// const body = document.querySelector('body')
+// for (let i = 0; i < 20; i++) {
+//     const circle = document.createElement('div');
+//     circle.setAttribute('class', 'circles')
+//     setInterval(() => {
+//         circle.style.backgroundColor = `rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`;
+//     }, 500);
+//     circle.style.display = 'inline-block'
+//     body.appendChild(circle)
+// }
+
+
+// const poceBack = document.createElement('div');
+// setInterval(() => {
+//     poceBack.style.backgroundColor = `rgb(${Math.round(Math.random()*255)},${Math.round(Math.random()*255)},${Math.round(Math.random()*255)})`;
+// }, 500);
+// poceBack.style.width = '200px'
+
+// console.log(poceBack)
+
+// const poceTitle = document.createElement('h2');
+// poceTitle.style.textAlign = 'center';
+// poceTitle.textContent = pikachu.name;
+// const poceImg = document.createElement('img');
+// poceImg.setAttribute('src', 'venusaur.png');
+// poceImg.setAttribute('class', 'position')
+
+
+// body.appendChild(poceBack);
+// poceBack.appendChild(poceTitle);
+// poceBack.appendChild(poceImg);
+
+
+// pokemon.moves.forEach(elem => {
+//     let posibility = document.createElement('p');
+//     poceBack.appendChild(posibility);
+//     posibility.textContent = elem.move.name
+// })
