@@ -30,21 +30,21 @@
 // const list = document.querySelector('#gallery');
 // const images = [{
 //         url: 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//         alt: 'White and Black Long Fur Cat',
+//         alt: '"White and Black Long Fur Cat"',
 //     },
 //     {
 //         url: 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//         alt: 'Orange and White Koi Fish Near Yellow Koi Fish',
+//         alt: '"Orange and White Koi Fish Near Yellow Koi Fish"',
 //     },
 //     {
 //         url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-//         alt: 'Group of Horses Running',
+//         alt: '"Group of Horses Running"',
 //     },
 // ];
 
-// const addImg = images.forEach(el => {
-//     const add = list.insertAdjacentHTML('beforeend', `<img src = ${el.url} alt = ${el.alt} class = img> `);
-// })
+// const addImg = images.reduce((acc, el) =>
+//     acc + `<li><img src = ${el.url} alt = ${el.alt} class = img></li> `, "");
+// list.insertAdjacentHTML('beforeend', addImg);
 
 // // 4 task (not done)
 
@@ -85,11 +85,11 @@
 
 // const input = document.querySelector('#validation-input');
 
-// input.addEventListener('input', (e) => {
-//     if (e.target.value.length < e.target.getAttribute('data-length')) {
-//         input.setAttribute('class', 'invalid')
-//     } else {
+// input.addEventListener('blur', (e) => {
+//     if (e.target.value.length == e.target.getAttribute('data-length')) {
 //         input.setAttribute('class', 'valid')
+//     } else {
+//         input.setAttribute('class', 'invalid')
 //     }
 // });
 
