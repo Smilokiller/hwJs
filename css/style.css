@@ -36,3 +36,8 @@
     margin: 20px;
     display: inline-block;
 }
+
+.button {
+    width: 100px;
+    height: 100px;
+}

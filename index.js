@@ -535,3 +535,32 @@ import pokemon from './pokemon.js';
 //     poceBack.appendChild(posibility);
 //     posibility.textContent = elem.move.name
 // })
+
+
+
+
+// const button = document.querySelector(".button");
+// let buttonNumb = 0;
+// const count = button.addEventListener('click', (e) => {
+//     buttonNumb += 1;
+//     button.textContent = buttonNumb;
+// })
+
+// const input = document.querySelector(".input");
+// const button = document.querySelector(".button");
+// const text = document.querySelector(".text");
+
+// // const summ = button.addEventListener('click', (e) => {
+// //     text.textContent = Number(input1.value) + Number(input2.value);
+// // })
+// const check = button.addEventListener('click', (e) => {
+//     for (var i = 0; i < input.length; i++) {
+//         if (input[i].type === 'radio' && input[i].checked) {
+//             let rezultatRadio = input[i].value;
+//             console.log(rezultatRadio);
+//             console.log(input[i].value)
+//         }
+//         document.getElementsByClassName('text').innerHTML = rezultatRadio;
+
+//     }
+// })
