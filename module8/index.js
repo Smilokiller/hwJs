@@ -26,8 +26,6 @@ const closeModal = function() {
     modal.classList.remove('is-open');
 }
 
-
-
 const imgNotColse = function() {
     event.stopPropagation()
 }
@@ -40,17 +38,13 @@ document.addEventListener('keydown', function(event) {
 
 document.addEventListener('keydown', function(event) {
     let sour = Number(modalImg.dataset.element);
-
     const arr = [];
     arr.push(...list.querySelectorAll('img'));
 
     if (event.key === "ArrowRight") {
         sour += 1;
-        console.log(sour);
         const right = arr.find(el => {
             if (el.dataset.element == sour) {
-                console.log(el);
-                console.log(sour)
                 modalImg.setAttribute('src', `${el.dataset.source}`);
                 modalImg.setAttribute('alt', `${el.alt}`);
                 modalImg.setAttribute('data-element', `${el.dataset.element}`);
@@ -59,11 +53,9 @@ document.addEventListener('keydown', function(event) {
     }
     if (event.key === "ArrowLeft") {
         sour -= 1;
-        console.log(sour);
         const right = arr.find(el => {
             if (el.dataset.element == sour) {
-                console.log(el);
-                console.log(sour)
+
                 modalImg.setAttribute('src', `${el.dataset.source}`);
                 modalImg.setAttribute('alt', `${el.alt}`);
                 modalImg.setAttribute('data-element', `${el.dataset.element}`);
@@ -71,7 +63,6 @@ document.addEventListener('keydown', function(event) {
         })
     }
 });
-
 
 list.addEventListener('click', openModal);
 close.addEventListener('click', closeModal);
